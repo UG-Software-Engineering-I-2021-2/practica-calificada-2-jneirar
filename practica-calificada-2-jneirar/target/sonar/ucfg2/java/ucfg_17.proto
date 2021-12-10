@@ -1,0 +1,27 @@
+
+&ing.Principal#studentHasExtraPoints()Z†
+ïD:/Insync/UTEC/07 - 2021-2/Ingenier√≠a de Software I/S14/practica-calificada-2-jneirar/practica-calificada-2-jneirar/src/main/java/ing/Principal.javaM M(("1*›
+1†
+ïD:/Insync/UTEC/07 - 2021-2/Ingenier√≠a de Software I/S14/practica-calificada-2-jneirar/practica-calificada-2-jneirar/src/main/java/ing/Principal.javaN N(Í
+Á
+†
+ïD:/Insync/UTEC/07 - 2021-2/Ingenier√≠a de Software I/S14/practica-calificada-2-jneirar/practica-calificada-2-jneirar/src/main/java/ing/Principal.javaN N(
+%0java.util.Map"__id*'*%
+ing.Principal"
+allYearsTeachersÁ
+‰
+†
+ïD:/Insync/UTEC/07 - 2021-2/Ingenier√≠a de Software I/S14/practica-calificada-2-jneirar/practica-calificada-2-jneirar/src/main/java/ing/Principal.javaN N(9
+%1ing.YearTeachers"__mapGet*
+
+%0java.util.Map*
+""Ø¨
+†
+ïD:/Insync/UTEC/07 - 2021-2/Ingenier√≠a de Software I/S14/practica-calificada-2-jneirar/practica-calificada-2-jneirar/src/main/java/ing/Principal.javaN N(Q
+%2java.lang.Boolean";ing.YearTeachers#increaseOneExtraPoint()Ljava/lang/Boolean;*
+
+%1ing.YearTeachers2increaseOneExtraPoint()"´
+†
+ïD:/Insync/UTEC/07 - 2021-2/Ingenier√≠a de Software I/S14/practica-calificada-2-jneirar/practica-calificada-2-jneirar/src/main/java/ing/Principal.javaN N(R
+""B
+ing.Principal

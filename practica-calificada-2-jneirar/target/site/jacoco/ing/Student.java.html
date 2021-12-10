@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Student.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">practica-calificada-2-jneirar</a> &gt; <a href="index.source.html" class="el_package">ing</a> &gt; <span class="el_source">Student.java</span></div><h1>Student.java</h1><pre class="source lang-java linenums">package ing;
 
-public class Student {
-    private String _Nombre;
-    private int _Tipo;
-<span class="nc" id="L6">    private int _notaBase =11;</span>
-    static final int Pregado = 0;
-    static final int Maestria = 1;
-    static final int Doctorado = 2;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
-<span class="nc" id="L11">    Student(int type, String nombre) {</span>
-<span class="nc" id="L12">        _Tipo = type;</span>
-<span class="nc" id="L13">        _Nombre = nombre;</span>
-<span class="nc" id="L14">    }</span>
-    int Grado() {
-<span class="nc bnc" id="L16" title="All 4 branches missed.">        switch (_Tipo) {</span>
-            case Pregado:
-<span class="nc" id="L18">                return _notaBase;</span>
-            case Maestria:
-<span class="nc" id="L20">                return _notaBase + 1;</span>
-            case Doctorado:
-<span class="nc" id="L22">                return _notaBase + 2;</span>
-            default:
-<span class="nc" id="L24">                throw new RuntimeException(&quot;Empleado incorrecto&quot;);</span>
-        }
+public class Student {
+    private final String name;
+    private final List&lt;Pair&lt;Integer, Pair&lt;Float, Boolean&gt;&gt;&gt; grades;
+
+<span class="fc" id="L11">    Student(String name) {</span>
+<span class="fc" id="L12">        this.name = name;</span>
+<span class="fc" id="L13">        grades = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L14">    }</span>
+    public void addYearGrade(Integer year, float grade, boolean hasBonus){
+<span class="fc" id="L16">        grades.add(new Pair&lt;&gt;(year, new Pair&lt;&gt;(grade, hasBonus)));</span>
+<span class="fc" id="L17">    }</span>
+    public String getName(){
+<span class="fc" id="L19">        return this.name;</span>
+    }
+    public boolean hasExtraPointInYear(Integer year){
+<span class="fc bfc" id="L22" title="All 2 branches covered.">        for(Pair&lt;Integer, Pair&lt;Float, Boolean&gt;&gt; grade : grades){</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">            if(Objects.equals(grade.first(), year)){</span>
+<span class="fc" id="L24">                return grade.second().second();</span>
+            }
+<span class="fc" id="L26">        }</span>
+<span class="fc" id="L27">        return false;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

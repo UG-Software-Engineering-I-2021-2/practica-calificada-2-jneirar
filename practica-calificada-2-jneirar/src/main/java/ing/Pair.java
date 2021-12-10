@@ -1,19 +1,19 @@
 package ing;
 
-public final class Pair<FirstType, SecondType> {
-    private final FirstType first;
-    private final SecondType second;
+public final class Pair<F, S> {
+    private final F first;
+    private final S second;
 
-    public Pair(FirstType first, SecondType second) {
+    public Pair(F first, S second) {
         this.first  = first;
         this.second = second;
     }
 
-    public FirstType first() {
+    public F first() {
         return first;
     }
 
-    public SecondType second() {
+    public S second() {
         return second;
     }
 }

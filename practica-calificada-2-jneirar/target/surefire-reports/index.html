@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">13 methods,   13 passed</span>
+                    <span class="method-stats">15 methods,   15 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -155,6 +155,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="ing.PrincipalTest" class="method navigator-link" hash-for-method="round_up_to_2_decimals_given_odd_exam_grades_and_attending_the_minimum_classes">round_up_to_2_decimals_given_odd_exam_grades_and_attending_the_minimum_classes</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="ing.PrincipalTest" class="method navigator-link" hash-for-method="test_printTeachersAgreedWithGiveExtraPoints">test_printTeachersAgreedWithGiveExtraPoints</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="ing.PrincipalTest" class="method navigator-link" hash-for-method="test_studentHasExtraPoints">test_studentHasExtraPoints</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -264,6 +274,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="test_printTeachersAgreedWithGiveExtraPoints">
+                  </a> <!-- test_printTeachersAgreedWithGiveExtraPoints -->
+                  <span class="method-name">test_printTeachersAgreedWithGiveExtraPoints</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_studentHasExtraPoints">
+                  </a> <!-- test_studentHasExtraPoints -->
+                  <span class="method-name">test_studentHasExtraPoints</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="validate_all_exam_grades_weight_below_100">
                   </a> <!-- validate_all_exam_grades_weight_below_100 -->
                   <span class="method-name">validate_all_exam_grades_weight_below_100</span>
@@ -329,64 +353,72 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(13);
+data.addRows(15);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'calculate_average_grade_given_different_exam_grades_and_attending_the_minimum_classes')
 data.setCell(0, 2, 'ing.PrincipalTest')
-data.setCell(0, 3, 16);
+data.setCell(0, 3, 40);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'fail_given_one_single_exam_but_not_attending_the_minimum_classes')
+data.setCell(1, 1, 'test_printTeachersAgreedWithGiveExtraPoints')
 data.setCell(1, 2, 'ing.PrincipalTest')
-data.setCell(1, 3, 1);
+data.setCell(1, 3, 38);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'fail_given_different_exam_grades_but_not_attending_the_minimum_classes')
+data.setCell(2, 1, 'test_studentHasExtraPoints')
 data.setCell(2, 2, 'ing.PrincipalTest')
-data.setCell(2, 3, 1);
+data.setCell(2, 3, 2);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'fail_given_there_are_no_exams')
+data.setCell(3, 1, 'fail_given_different_exam_grades_but_not_attending_the_minimum_classes')
 data.setCell(3, 2, 'ing.PrincipalTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 3, 1);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'fail_given_odd_exam_grades_but_attending_the_minimum_classes')
 data.setCell(4, 2, 'ing.PrincipalTest')
-data.setCell(4, 3, 0);
+data.setCell(4, 3, 1);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'increase_one_extra_point_if_there_is_any_benevolent_teacher_in_the_year_to_calculate_grades')
+data.setCell(5, 1, 'fail_when_there_are_no_exams_and_has_not_attended_the_minimum_classes')
 data.setCell(5, 2, 'ing.PrincipalTest')
-data.setCell(5, 3, 0);
+data.setCell(5, 3, 1);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'maintain_10_as_the_maximum_grade_even_if_increasing_one_extra_point')
+data.setCell(6, 1, 'round_up_to_2_decimals_given_odd_exam_grades_and_attending_the_minimum_classes')
 data.setCell(6, 2, 'ing.PrincipalTest')
-data.setCell(6, 3, 0);
+data.setCell(6, 3, 1);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'round_up_to_2_decimals_given_odd_exam_grades_and_attending_the_minimum_classes')
+data.setCell(7, 1, 'fail_given_one_single_exam_but_not_attending_the_minimum_classes')
 data.setCell(7, 2, 'ing.PrincipalTest')
 data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'not_increase_one_extra_point_if_there_is_not_any_benevolent_teacher_in_the_year_to_calculate_grades')
+data.setCell(8, 1, 'fail_given_there_are_no_exams')
 data.setCell(8, 2, 'ing.PrincipalTest')
 data.setCell(8, 3, 0);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'validate_all_exam_grades_weight_over_100')
+data.setCell(9, 1, 'validate_all_exam_grades_weight_below_100')
 data.setCell(9, 2, 'ing.PrincipalTest')
 data.setCell(9, 3, 0);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'calculate_same_grade_given_one_single_exam_and_attending_the_minimum_classes')
+data.setCell(10, 1, 'increase_one_extra_point_if_there_is_any_benevolent_teacher_in_the_year_to_calculate_grades')
 data.setCell(10, 2, 'ing.PrincipalTest')
 data.setCell(10, 3, 0);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'fail_when_there_are_no_exams_and_has_not_attended_the_minimum_classes')
+data.setCell(11, 1, 'calculate_same_grade_given_one_single_exam_and_attending_the_minimum_classes')
 data.setCell(11, 2, 'ing.PrincipalTest')
 data.setCell(11, 3, 0);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'validate_all_exam_grades_weight_below_100')
+data.setCell(12, 1, 'validate_all_exam_grades_weight_over_100')
 data.setCell(12, 2, 'ing.PrincipalTest')
 data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'maintain_10_as_the_maximum_grade_even_if_increasing_one_extra_point')
+data.setCell(13, 2, 'ing.PrincipalTest')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'not_increase_one_extra_point_if_there_is_not_any_benevolent_teacher_in_the_year_to_calculate_grades')
+data.setCell(14, 2, 'ing.PrincipalTest')
+data.setCell(14, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 ms</span>
+              <span class="suite-total-time">Total running time: 84 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -419,51 +451,59 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">calculate_same_grade_given_one_single_exam_and_attending_the_minimum_classes</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-start">48 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fail_given_different_exam_grades_but_not_attending_the_minimum_classes</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-start">51 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fail_given_odd_exam_grades_but_attending_the_minimum_classes</span>
-                <span class="method-start">21 ms</span>
+                <span class="method-start">54 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fail_given_one_single_exam_but_not_attending_the_minimum_classes</span>
-                <span class="method-start">21 ms</span>
+                <span class="method-start">56 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fail_given_there_are_no_exams</span>
-                <span class="method-start">22 ms</span>
+                <span class="method-start">57 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fail_when_there_are_no_exams_and_has_not_attended_the_minimum_classes</span>
-                <span class="method-start">22 ms</span>
+                <span class="method-start">57 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">increase_one_extra_point_if_there_is_any_benevolent_teacher_in_the_year_to_calculate_grades</span>
-                <span class="method-start">23 ms</span>
+                <span class="method-start">58 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">maintain_10_as_the_maximum_grade_even_if_increasing_one_extra_point</span>
-                <span class="method-start">23 ms</span>
+                <span class="method-start">59 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">not_increase_one_extra_point_if_there_is_not_any_benevolent_teacher_in_the_year_to_calculate_grades</span>
-                <span class="method-start">23 ms</span>
+                <span class="method-start">60 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">round_up_to_2_decimals_given_odd_exam_grades_and_attending_the_minimum_classes</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-start">60 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_printTeachersAgreedWithGiveExtraPoints</span>
+                <span class="method-start">61 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_studentHasExtraPoints</span>
+                <span class="method-start">100 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_all_exam_grades_weight_below_100</span>
-                <span class="method-start">24 ms</span>
+                <span class="method-start">102 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validate_all_exam_grades_weight_over_100</span>
-                <span class="method-start">25 ms</span>
+                <span class="method-start">103 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

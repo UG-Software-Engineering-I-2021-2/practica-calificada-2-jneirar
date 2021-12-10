@@ -3,5 +3,5 @@ projectKey=practica-calificada-2-jneirar
 serverUrl=https://sonarcloud.io
 serverVersion=8.0.0.25394
 dashboardUrl=https://sonarcloud.io/dashboard?id=practica-calificada-2-jneirar
-ceTaskId=AX2h8RevKogXBUXdIjng
-ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX2h8RevKogXBUXdIjng
+ceTaskId=AX2iYcxzKogXBUXdIkF0
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AX2iYcxzKogXBUXdIkF0
