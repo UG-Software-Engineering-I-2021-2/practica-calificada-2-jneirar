@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+practica-calificada-2-jneirar,ing,Principal,4,201,0,20,2,41,1,12,1,2
+practica-calificada-2-jneirar,ing,Teacher,23,18,4,0,5,7,4,1,1,1
+practica-calificada-2-jneirar,ing,Student,33,0,4,0,10,0,5,0,2,0
+practica-calificada-2-jneirar,ing,Pair,0,15,0,0,0,6,0,3,0,3
